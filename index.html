@@ -4,44 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorum Minecraft Server</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-900 text-white">
-    <header class="text-center p-6 bg-gray-800">
-        <h1 class="text-4xl font-bold">Welcome to Sorum</h1>
-        <p class="text-lg">An epic Minecraft experience awaits!</p>
+<body>
+    <header class="hero">
+        <h1 class="hero-title">Welcome to Sorum</h1>
+        <p class="hero-subtitle">An epic Minecraft experience awaits!</p>
     </header>
 
-    <main class="max-w-4xl mx-auto p-6">
-        <section class="text-center">
-            <h2 class="text-3xl font-semibold">Join Us</h2>
-            <p class="mt-2">Server IP: <span class="font-mono text-green-400">play.sorummc.com</span></p>
-            <p class="mt-2">Current Players: <span id="playerCount" class="font-bold">Loading...</span></p>
+    <main>
+        <section class="section fade-in">
+            <h2>Join Us</h2>
+            <p>Server IP: <span class="highlight">play.sorummc.com</span></p>
+            <p>Current Players: <span id="playerCount">Loading...</span></p>
         </section>
 
-        <section class="mt-8">
-            <h2 class="text-2xl font-semibold text-center">About Sorum</h2>
-            <p class="mt-2 text-gray-300 text-center">
+        <section class="section fade-in">
+            <h2>About Sorum</h2>
+            <p>
                 Sorum is a community-driven Minecraft server offering survival, minigames, and custom adventures.
             </p>
         </section>
 
-        <section class="mt-8 text-center">
-            <h2 class="text-2xl font-semibold">Contact Us</h2>
-            <p>Join our Discord: <a href="#" class="text-blue-400 underline">Click Here</a></p>
+        <section class="section fade-in">
+            <h2>Contact Us</h2>
+            <p>Join our Discord: <a href="#" class="btn">Click Here</a></p>
         </section>
     </main>
 
-    <footer class="text-center p-4 bg-gray-800 mt-8">
+    <footer>
         <p>&copy; 2025 Sorum Minecraft Server. All Rights Reserved.</p>
     </footer>
 
-    <script>
-        // Fetch player count (replace with a real API call)
-        async function getPlayerCount() {
-            document.getElementById("playerCount").innerText = "42"; // Replace with real data
-        }
-        getPlayerCount();
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
